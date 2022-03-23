@@ -37,3 +37,19 @@ var sum = function (a, b) {
 
 var add5 = sum.bind(null, 5);
 console.log(add5(10));
+console.log("----------------------------");
+let a1 = {
+  x: 5,
+  y: 10,
+};
+let a2 = {
+  x: 15,
+  y: 100,
+};
+function printCoordinates() {
+  console.log(this.x + " " + this.y);
+}
+let a1_fonk = printCoordinates.bind(a1);
+let a2_fonk = printCoordinates.bind(a2);
+a1_fonk();
+a2_fonk();
