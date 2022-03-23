@@ -38,6 +38,7 @@ var sum = function (a, b) {
 var add5 = sum.bind(null, 5);
 console.log(add5(10));
 console.log("----------------------------");
+//Bind an object to a function
 let a1 = {
   x: 5,
   y: 10,
