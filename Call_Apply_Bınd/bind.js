@@ -14,14 +14,14 @@
 // let fullName1 = person.fullName.bind(member);
 // console.log(fullName1());
 
-var Button = function (content) {
+var Btn = function (content) {
   this.content = content;
 };
-Button.prototype.click = function () {
+Btn.prototype.click = function () {
   console.log(this.content + " clicked");
 };
 
-var myButton = new Button("OK");
+var myButton = new Btn("OK");
 myButton.click();
 
 var looseClick = myButton.click;
